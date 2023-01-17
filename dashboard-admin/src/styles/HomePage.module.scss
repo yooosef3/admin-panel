@@ -1,0 +1,13 @@
+.HomePage{
+    height: 100vh;
+    overflow-y: auto;
+}
+@media (min-width:1200px) {
+    .HomePage{
+        display: flex ;
+        gap: 20px;
+        height: 100vh;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+}

@@ -1,0 +1,83 @@
+[
+    {
+      "value": 400,
+      "name": "فروردین",
+      "itemStyle": {
+        "normal": {
+          "color": "#f845f1"
+        }
+      }
+    },
+    {
+      "value": 900,
+      "name": "اردیبهشت",
+      "itemStyle": {
+        "normal": {
+          "color": "#ad46f3"
+        }
+      }
+    },
+    {
+      "value": 1000,
+      "name": "خرداد",
+      "itemStyle": {
+        "normal": {
+          "color": "#5045f6"
+        }
+      }
+    },
+    {
+      "value": 1100,
+      "name": "تیر",
+      "itemStyle": {
+        "normal": {
+          "color": "#4777f5"
+        }
+      }
+    },
+    {
+      "value": 1200,
+      "name": "مرداد",
+      "itemStyle": {
+        "normal": {
+          "color": "#44aff0"
+        }
+      }
+    },
+    {
+      "value": 1300,
+      "name": "شهریور",
+      "itemStyle": {
+        "normal": {
+          "color": "#45dbf7"
+        }
+      }
+    },
+    {
+      "value": 1300,
+      "name": "مهر",
+      "itemStyle": {
+        "normal": {
+          "color": "#f6d54a"
+        }
+      }
+    },
+    {
+      "value": 1400,
+      "name": "آبان",
+      "itemStyle": {
+        "normal": {
+          "color": "#f69846"
+        }
+      }
+    },
+    {
+      "value": 1600,
+      "name": "آذر",
+      "itemStyle": {
+        "normal": {
+          "color": "#ff4343"
+        }
+      }
+    }
+  ]

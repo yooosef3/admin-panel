@@ -1,0 +1,63 @@
+.projectInfo{
+        width: 100%;
+        border-top: 1px solid #d4d4d4;
+        &:nth-of-type(even){
+          background-color: #f1f1f1;
+        }
+}
+
+.budget{
+    p{
+        color:#666666;
+        font-weight: 600;
+    }
+}
+
+.status{
+    color:#666666;
+    font-weight: 600;
+}
+
+.projectImage {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    h4 {
+      margin: 8px 0 0;
+    }
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 10px;
+    }
+  }
+
+  .percentage{
+    span{
+      font-weight: 600;
+      color: gray;
+    }
+    .progressive{
+      position: relative;
+      width: 120px;
+      height: 5px;
+      border-radius: 6px;
+      background-color: #dbdbdb;
+      div{
+        position: absolute;
+        height: 8px;
+        bottom: -1.6px;
+        border-radius: 6px;
+      }
+    }
+}
+
+.dots{
+    font-size: 24px;
+    cursor: pointer;
+    transition: all .2s linear;
+    color: #666666;
+    &:hover{
+        color: #2da0ec;
+    }
+}

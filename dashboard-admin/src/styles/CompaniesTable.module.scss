@@ -1,0 +1,21 @@
+.CompaniesTable{
+    background-color: #ffff;
+    padding: 15px;
+    width: 905px;
+    border-collapse: collapse;
+    @media (min-width: 992px) {
+        width: 775px;
+    }
+    thead{
+        height: 60px;
+        tr{
+            text-align: right;
+        }
+        th{
+            color: gray;
+            &:first-of-type{
+                padding-right: 15px;
+            }
+        }
+    }
+    }

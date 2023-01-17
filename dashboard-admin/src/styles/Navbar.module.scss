@@ -1,0 +1,327 @@
+$transition: all .2s linear;
+
+.navbar {
+  display: flex;
+  flex-direction: column;
+  padding:10px;
+  z-index: 30;
+}
+
+.navbarFixed{
+  position: fixed;
+  left: 15px !important;
+  right: 15px;
+  top: 10px;
+  z-index: 3;
+  border-radius: 6px;
+  padding: 10px 20px;
+  box-shadow: #0000001a 0 4px 12px;
+  background-color: #ffffff;
+  .search input{
+    background-color: #f8f9fa;
+  }
+}
+
+.dashboard div {
+  display: flex;
+  align-items: center;
+}
+
+.dashboard h3 {
+  padding: 0 5px;
+  margin-bottom: 0;
+}
+
+.dashboard h3:nth-child(-n + 2) {
+  color: gray;
+
+}
+
+.dashboard h3:nth-child(odd) {
+  font-weight: 500;
+}
+
+.dashboard h3:nth-child(1) {
+  cursor: pointer;
+}
+
+.dashboard h2 {
+  margin-top: 0;
+}
+
+.navbar .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.search {
+  position: relative;
+  width: fit-content;
+}
+
+.search input {
+  padding: 15px 10px;
+  border: 1px solid #c9c9c9;
+  border-radius: 8px;
+  outline-color: #cb0c9f;
+  margin-left: 5px;
+  width: 95%;
+}
+
+.search input::placeholder {
+  color: #b3b3b3;
+  font-size: 14px;
+  font-family: 'YekanBakh';
+  @media (min-width:640px) {
+    font-size: 22px;
+  }
+}
+
+.search svg {
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  font-size: 24px;
+  font-weight: 900;
+  color: #344767;
+  cursor: pointer;
+  transition: $transition;
+
+  &:hover{
+    color: #cb0c9f;
+  }
+}
+
+.navbar .buttons .GiHamburgerMenu,
+.navbar .buttons .IoSettingsSharp
+{
+  font-size: 32px !important;
+}
+
+.navbar .buttons #creator{
+    font-family: 'YekanBakh';
+    color: #cb0c9f;
+    background-color: transparent;
+    border: 1px solid #cb0c9f;
+    border-radius: 5px;
+    padding: 7px 10px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: auto;
+    cursor: pointer;
+    transition: $transition;
+}
+
+.navbar .buttons #creator:hover{
+    transform: scale(1.04);
+    color: #ca3ba9;
+    border-color: #ca3ba9;
+}
+
+.navbar .buttons #creator:focus{
+    background-color: #cb0c9f;
+    color: #ffff;
+}
+
+.navbar .login{
+  display: flex;
+  cursor: pointer;
+  transition: $transition;
+}
+
+.navbar .login:hover > *{
+  color: #cb0c9f;
+}
+
+.navbar .buttons #navIcons{
+    color: #344767;
+    font-size: 18px;
+    margin: 0 8px;
+    cursor: pointer;
+    transition: $transition;
+}
+
+.navbar .buttons #navIcons:hover{
+    color: #cb0c9f;
+}
+
+.navbar .buttons span{
+  color: #344767;
+  font-weight: 600;
+  cursor: pointer;
+  transition: $transition;
+  display: none;
+} 
+
+.navbar .buttons .bell{
+  position: relative;
+  .alert{
+    z-index: 5;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, .1) 0px 4px 12px;
+    border-radius: 10px;
+    padding: 10px;
+    width: 300px;
+    left: 0px;
+    top: 70px;
+
+    img{
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+    }
+
+    .alertSection{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      border-radius: 8px;
+      padding: 7px;
+      cursor: pointer;
+      transition: $transition;
+
+      &:hover{
+        background-color: #edf1f3;
+      }
+
+      &:nth-of-type(2){
+        img{
+          background-color: #344767;
+        }
+      }
+
+      .pay{
+        background-color: #344767;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        display: flex;
+        text-align: center;
+        align-items: center;
+
+        svg{
+          color: #ffff;
+          font-size: 36px;
+          border-radius: 20%;
+          margin: -4px auto;
+        }
+      }
+      
+    }
+  }
+  #navIcons{
+    &:first-of-type{
+      margin-bottom: -8px;
+    }
+  }
+}
+
+.navbar .bell .alertInfo{
+  display: flex;
+  flex-direction: column;
+  
+  section{
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    
+    h4{
+      margin: 0 0 0 10px;
+    }
+    
+    p{
+      margin-right: 10px;
+      font-size: 18px;
+      font-weight: 600;
+      color: #8393a2;
+      margin: -4px 0 0;
+
+      &:nth-child(1){
+        color: #00d400 !important;
+      }
+    }
+  }
+  
+  div{
+    display: flex;
+    align-items: center;
+    small{
+      font-weight: 600;
+      color: #8393a2;
+      margin: 5px 0 0;
+    }
+    svg{
+      color: #8393a2;
+      margin-right: 10px;
+      margin-left: 8px;
+    }
+  }
+}
+
+.hideAlert{
+  display: none !important;
+}
+
+@media (min-width:450px) {
+  .navbar .buttons .GiHamburgerMenu,
+  .navbar .buttons .IoSettingsSharp{
+    font-size: 18px !important;
+  }
+}
+
+
+@media (min-width:640px) {
+  .navbar .buttons span{
+    display: block;
+  }
+
+  .navbar .buttons svg{
+    margin: 0 15px;
+  }
+
+  .navbar .buttons svg:nth-of-type(1){
+    margin-left: 5px;
+  }
+
+  .search svg{
+    left: 10px !important;
+  }
+}
+
+@media (min-width:765px) {
+  .navbar button{
+    margin-right: 5px;
+  }
+}
+
+@media (min-width:992px){
+  .navbar, .navbarFixed{
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 15px;
+    border-radius: 6px;
+    background-color: #ffff;
+    box-shadow: rgba(0, 0, 0, .1) 0 4px 12px;
+  }
+  .search input{
+    background-color: #f8f9fa;
+  }
+}
+
+@media (min-width:1200px){
+  .buttons .GiHamburgerMenu{
+    display: none;
+  }
+  .navbar{
+    margin-top: 2px;
+  }
+  .navbarFixed{
+    right: 310px;
+    left: 45px;
+  }
+}

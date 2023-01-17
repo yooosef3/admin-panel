@@ -1,0 +1,57 @@
+.body{
+    border-top: 1px solid rgb(225, 225, 225);
+    align-items: center;
+    width: 100%;
+    &:nth-child(even){
+        background-color: #ecf9fb;
+    }
+    .company{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        img{
+            width: 60px;
+            margin-left: 15px;
+        }
+        h4{
+            font-weight: 600;
+            margin: 0;
+            padding: 6px 0 0;
+        }
+    }
+    .members{
+        padding: 10px 0 0 0;
+        img{
+            width: 30px;
+            border-radius: 50%;
+            margin: 0 -6px;
+            cursor: pointer;
+            border: 3px solid #ffff;
+            transition: all .2s linear;
+            &:hover{
+             z-index: 10 !important; 
+             border: 3px solid #2796eb;  
+            }
+        }
+    }
+    .budget, span{
+        color: #4d5f62;
+        font-weight: 600;
+    }
+
+    .percentages{
+        .percentage{
+            position: relative;
+            width: 120px;
+            height: 5px;
+            background-color: #dbdbdb;
+            border-radius: 6px;
+            div{
+                position: absolute;
+                height: 8px;
+                bottom: -1.6px;
+                border-radius: 6px;
+            }
+        }
+    }
+}
